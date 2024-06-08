@@ -72,13 +72,23 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
+*❖ 𝐇𝙴𝚈 » {} ❤️
+*❖ 𝐍𝙸𝙲𝙴 𝐓𝙾 𝐌𝙴𝙴𝚈 𝐘𝙾𝚄 ✨ ! 
+•─┈─┈─┈─┈─┈─┈─┈─┈─┈─┈─•
+*❍ 𝐈 𝐀𝙼 ➛ {} 𝐇𝙴𝚁𝙴 𝐓𝙷𝙴 𝐌𝙾𝚂𝚃 𝐏𝙾𝚆𝙴𝚁𝙵𝚄𝙻 𝐓𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝐆𝚁𝙾𝚄𝙿 𝐌𝙰𝙽𝙰𝙶𝙴𝙼𝙴𝙽𝚃 + 𝐌𝚄𝚂𝙸𝙲 𝐌𝙰𝙽𝙰𝙶𝙴𝙼𝙴𝙽𝚃 𝐁𝙾𝚃 ..*
 
-*๏ ᴛʜɪs ɪs* {} !
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+*❍ 𝐈 𝐇𝙰𝚅𝙴 𝐒𝙾𝙼𝙴 𝐒𝙿𝙴𝙲𝙸𝙰𝙻 & 𝐂𝙾𝙾𝙻 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ..*
+•─┈─┈─┈─┈─┈─┈─┈─┈─┈─┈─•
+*𑁍𝐋𝙸𝙺𝙴 ➛*
 
-──────────────────
-*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+*● 𝐀𝙽𝙸𝙼𝙴 𝐋𝙾𝙶𝙾 ..*
+*● 𝐒𝙿𝙰𝙼 𝐏𝚁𝙾𝚃𝙴𝙲𝚃𝙸𝙾𝙽 ..*
+*● 𝐏𝚁𝙾𝚃𝙴𝙲𝚃 𝐘𝙾𝚄𝚁 𝐆𝚁𝙾𝚄𝙿𝚂 𝐅𝚁𝙾𝙼 𝐅𝙰𝙺𝙴 𝐂𝙾𝙿𝚈𝚁𝙸𝙶𝙷𝚃 𝐒𝚃𝚁𝙸𝙺𝙴 ..*
+*● 𝐀𝙸 𝐂𝙷𝙰𝚃𝙱𝙾𝚃 ..
+● 𝐆𝙰𝙼𝙴𝚂 𝐀𝙽𝙳 𝐌𝙰𝙽𝚈 𝐌𝙾𝚁𝙴 ..*
+•─┈─┈─┈─┈─┈─┈─┈─┈─┈─┈─•
+*● 𝐔𝚂𝙴𝚁𝚂 ➛* {} 
+*● 𝐂𝙷𝙰𝚃𝚂 ➛* {}
 """
 
 buttons = [
@@ -204,7 +214,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
+                "CAACAgUAAxkBAAOfZmRj51B5VKwL7MDG07QQus_YY_MAAmQNAAKpjVBUXJos7ZBNIPA1BA"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
